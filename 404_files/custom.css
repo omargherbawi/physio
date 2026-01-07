@@ -1,6 +1,6 @@
 /* ----------------------------------------------------------------------------------------
 * Author        : Awaiken
-* Template Name : Physiocare - Physiotherapy HTML Template
+* Template Name : physiocare - Physiotherapy HTML Template
 * File          : CSS File
 * Version       : 1.0
 * ---------------------------------------------------------------------------------------- */
@@ -619,7 +619,7 @@ header.main-header .header-sticky.active{
 }
 
 .header-btn .btn-default::before{
-    background-image: url(../images/icon-phone.svg);
+    background-image: url(./icon-phone.svg);
 }
 
 .main-menu ul li.highlighted-menu{
