@@ -2086,6 +2086,15 @@ header.main-header .header-sticky.active{
 	margin-bottom: 30px;
 }
 
+.footer-logo img{
+	max-width: 170px;
+	max-height: 80px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
 .about-footer-content{
 	margin-bottom: 30px;
 }
@@ -4136,6 +4145,15 @@ header.main-header .header-sticky.active{
 	.footer-logo{
 		margin-bottom: 20px;
 	}
+
+.footer-logo img{
+	max-width: 170px;
+	max-height: 80px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
 	
 	.about-footer-content{
 		margin-bottom: 20px;
