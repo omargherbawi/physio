@@ -1,6 +1,7 @@
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 .cb-cursor {
 	position: fixed;
+	opacity: 0;
 	top: 0;
 	left: 0;
 	z-index: 150;

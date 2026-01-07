@@ -217,7 +217,7 @@ body{
 	height: 36px;
 	border-radius: 50%;
 	background-color: var(--primary-color);
-	background-image: url('../images/arrow-white.svg');
+	background-image: url('./arrow-white.svg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: auto;
@@ -270,12 +270,13 @@ body{
     width: 10px !important;
     height: 10px !important;
     pointer-events: none;
+    display: none !important;
     z-index: 1000000;
 }
 
 #ball{
 	position: fixed;
-	display: block;
+	display: none !important;
 	left: 0;
 	top: 0;
 	transform: translate(-50%, -50%);
@@ -659,7 +660,7 @@ header.main-header .header-sticky.active{
 }
 
 .slicknav_icon .slicknav_icon-bar:first-child{
-	margin-top: 0 !important;
+	margin-top: -9999px !important;
 }
 
 .slicknav_icon .slicknav_icon-bar:last-child{
@@ -2012,7 +2013,7 @@ header.main-header .header-sticky.active{
     top: -1px;
     right: 0;
     bottom: 0;
-    background-image: url("../images/readmore-arrow.svg");
+    background-image: url("./readmore-arrow.svg");
     background-repeat: no-repeat;
     background-position: center center;
     width: 24px;
@@ -2646,7 +2647,7 @@ header.main-header .header-sticky.active{
 	position: absolute;
 	display: block;
 	content: '';
-	background: url('../images/icon-right-down-arrow.svg') no-repeat right center;
+	background: url('./icon-right-down-arrow.svg') no-repeat right center;
     top: 50%;
     right: 0;
     width: 135px;
@@ -2660,7 +2661,7 @@ header.main-header .header-sticky.active{
 	position: absolute;
 	display: block;
 	content: '';
-	background: url('../images/icon-right-up-arrow.svg') no-repeat right center;
+	background: url('./icon-right-up-arrow.svg') no-repeat right center;
     top: 50%;
     right: 0;
     width: 135px;
@@ -2827,7 +2828,7 @@ header.main-header .header-sticky.active{
 .service-catagery-list ul li:before{
 	position: absolute;
 	content: '';
-	background: url('../images/arrow-white.svg') no-repeat center center;
+	background: url('./arrow-white.svg') no-repeat center center;
 	background-color: var(--primary-color);
 	top: 0;
 	right: 0;
@@ -3590,7 +3591,7 @@ header.main-header .header-sticky.active{
 .faq-catagery-list ul li:before{
 	position: absolute;
 	content: '';
-	background: url('../images/arrow-white.svg') no-repeat center center;
+	background: url('./arrow-white.svg') no-repeat center center;
 	background-color: var(--primary-color);
 	top: 1px;
 	right: 0;
@@ -3653,7 +3654,7 @@ header.main-header .header-sticky.active{
 	top: 50%;
 	bottom: auto;
 	transform: translate(0px, -50%) rotate(90deg);
-	background-image: url("../images/arrow-white.svg");
+	background-image: url("./arrow-white.svg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 12px;
@@ -5126,4 +5127,13 @@ header.main-header .header-sticky.active{
 	.error-page-content-heading h2{
 		font-size: 26px;
 	}
+}
+/* Hide cursor initially until mouse moves */
+.cb-cursor:not(.-visible) {
+	opacity: 0 !important;
+	visibility: hidden !important;
+}
+
+.cb-cursor:not(.-active) {
+	opacity: 0 !important;
 }
