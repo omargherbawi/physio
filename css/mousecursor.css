@@ -1,0 +1,67 @@
+.cb-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+  transition: transform 0.1s ease-out, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.cb-cursor.-visible {
+  opacity: 1;
+}
+
+.cb-cursor:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  transform: scale(0.2);
+  transition: transform 0.3s ease;
+}
+
+.cb-cursor-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%) scale(0);
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover States */
+.cb-cursor.-pointer:before {
+  transform: scale(1.5);
+}
+
+.cb-cursor.-text:before {
+  transform: scale(2.5);
+}
+
+.cb-cursor.-text .cb-cursor-text {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cb-cursor.-opaque:before {
+  transform: scale(1.5);
+}
+
+.cb-cursor.-active:before {
+  transform: scale(0.15);
+}
+
+.cb-cursor.-text.-active:before {
+  transform: scale(2.2);
+}
+
